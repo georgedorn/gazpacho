@@ -13,7 +13,7 @@
 
 ## About
 
-gazpacho is a simple, fast, and modern web scraping library. The library is stable, actively maintained, and installed with **zero** dependencies.
+gazpacho is a simple, fast, and modern web scraping library. The library is stable, and requires no dependencies.
 
 
 
@@ -22,7 +22,22 @@ gazpacho is a simple, fast, and modern web scraping library. The library is stab
 Install with `pip` at the command line:
 
 ```
-pip install -U gazpacho
+pip install git+https://github.com/georgedorn/gazpacho.git
+```
+
+Or, to install it somewhere with the intent to edit it, either:
+
+```
+pip install -e https://github.com/georgedorn/gazpacho.git#egg=gazpacho
+```
+
+Or:
+
+```
+git clone https://github.com/georgedorn/gazpacho.git
+cd gazpacho
+pip install setuptools  # needed for more recent versions of python
+python setup.py develop
 ```
 
 
